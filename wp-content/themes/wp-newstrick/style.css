@@ -4,7 +4,7 @@ Theme URI: http://themeforest.net/user/ZERGE/portfolio
 Description: NewsTrick - Responsive WordPress Blog Theme
 Author: ZERGE
 Author URI: http://themeforest.net/user/ZERGE
-Version: 1.01
+Version: 1.03
 Tags: light, white, flexible-width, custom-menu, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -136,6 +136,7 @@ ul.archives li { padding-bottom:5px; }
 .logo-block {  }
 
 .banner { margin:20px 0; padding-right: 20px; float: right; vertical-align:middle; }
+.banner img { width: 100%; }
 
 /* 
    -----------------------------------------------------
@@ -1101,7 +1102,8 @@ iframe {
 	-moz-transition: opacity 0.5s ease;
 	-ms-transition: opacity 0.5s ease;
 	-o-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease;		
+	transition: opacity 0.5s ease;
+	height: auto;		
 }
 
 .carousel-thumb:hover img { opacity: .6 !important; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)" !important; filter:alpha(opacity=60) !important; }
@@ -2623,53 +2625,39 @@ ol.linenums li {
 		#blog-entry, #post-entry, #page-entry, #blog-entry.homepage { margin-left:0; margin-right:0; }				
 }
 
-
 @media  (max-width: 480px) { 
 		.navigation select { display: block; }
 		#menu, .cat-posts, .banner, .single-post-sidebar, .top-menu { display:none; }
-/*		#blog-entry .post-entry { width: 174px; }		
-		#blog-entry, #post-entry, #page-entry, #blog-entry.homepage  { margin-left:0; margin-right:0; }
-		.one-column-widget .single-media-thumb iframe, .two-column-widget .single-media-thumb iframe { height: 150px; } */
 		.meta-time { display: block; margin: 5px 0 0 0; }
 		.meta-author { margin-left:0; }
-/*		[id^="carousel-"] li, [id*=" carousel-"] li { margin-right:0 !important;} */
 }
 
 @media (max-width: 320px) { 
 		#blog-entry .post-entry { width: 234px;}
 		#blog-entry, #post-entry, #page-entry, #blog-entry.homepage { margin-left:0; margin-right:0; }
-		/*.widget-two-column-horizontal li:last-child a img,*/ .widget-one-column-horizontal li:last-child a img { margin-bottom: 20px !important;}
+		.widget-one-column-horizontal li:last-child a img { margin-bottom: 20px !important;}
 		#social-counter li { margin-bottom: 20px; }
 		.cat-one-columnn .read-more { display:none; }
 		#entry-blog .cat-one-columnn .read-more { display:block; }
 		.widget-slider .title-mask { display: none; }
 		.small-slider .flex-next, .small-slider .flex-prev { bottom: 15px; }
 		[class^="ct-flickr-"] li a img { width: 73px; height: 73px; }
+		.widget-thumb li:not(:first-child) { margin-right: 7px; }
 }
 
 @media (max-width: 240px) { 
-		/*#blog-entry .post-entry { width: 154px;}
-		#blog-entry, #post-entry, #page-entry, #blog-entry.homepage { margin-left:0; margin-right:0; }		*/
 }
 
-
 @media (max-width: 220px) { 
-		/* #blog-entry .post-entry { width: 134px;} */
 }
 
 @media (max-width: 176px) { 
-		/* #blog-entry .post-entry { width: 90px;} */
 }
-
-
 
 @media (max-width: 767px) { 
 		.related-posts-single li { margin-right: 10px; margin-bottom: 10px; }
 		.related-posts-single li:last-child { margin-bottom: 0px; }
 		.copyright { padding-left: 20px; float: left; }
-		/*.top-social-block { margin-top:10px;}
-		.top-social-block ul li { float: left; }
-		.top-social-block ul { margin-left: 15px; } */
 		#menu { display: none; }	
 		.navigation select { display: block; }
 		#respond form div { width:97%;}
@@ -2684,7 +2672,6 @@ ol.linenums li {
 		.ticker-wrapper { padding-left:20px !important;}
 		.top-menu { display:none;}
 		.copyright, .add-info { padding-bottom:20px; padding-top:20px;}
-		/* .one-column-widget .single-media-thumb iframe, .two-column-widget .single-media-thumb iframe { height: 250px; } */
 		.single-video-post iframe, .single-media-thumb iframe { width:100%; }
 		.one-column-widget .entry-content { margin-bottom:20px;}
 		.second-column { margin-top:40px;}
@@ -2706,6 +2693,7 @@ ol.linenums li {
 		.widget-slider .flex-direction-nav .flex-prev { left: 5px; }
 		.widget-slider .flex-direction-nav .flex-next { right: 5px; }
 		#footer .row-fluid .span4:first-child .widget { padding-right: 20px; }
+		.two-column-widget .span4:nth-child(1), .two-column-widget .span4:nth-child(2) { margin-bottom: 100px; }
 }
 
 
@@ -2826,3 +2814,11 @@ img.wp-post-image {
 	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
 h1.text-logo { line-height: 46px !important; }
+
+
+/* 
+   ------------------------------------------------------
+				Added in the v 1.02
+   ------------------------------------------------------
+*/
+.ie10 #entry-post .flexslider img  {visibility: visible !important; opacity: 1 !important;}

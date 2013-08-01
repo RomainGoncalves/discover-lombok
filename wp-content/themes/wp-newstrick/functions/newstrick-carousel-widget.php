@@ -169,6 +169,7 @@ jQuery.noConflict()(function($){
 			else if ( $show_text == 'title' ) { ?>
 			  <span class="category-item bottom-shadow-2px" style="background-color:<?php echo $cat_color; ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>			
 			<?php }
+			else { }
 
 		  	//Get post type: standard post or review
 			$post_type = get_post_meta($post->ID, 'ct_mb_post_type', true);

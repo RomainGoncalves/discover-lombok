@@ -51,7 +51,7 @@ if (!function_exists('of_options'))
 
 
 		//Background Images Reader
-		$bg_images_path = get_stylesheet_directory() . '/img/bg/'; // change this to where you store your bg images
+		$bg_images_path = get_template_directory() . '/img/bg/'; // change this to where you store your bg images
 		$favico_urls = get_template_directory_uri().'/img';
 		$default_bg = get_template_directory_uri().'/img/';		
 		$bg_images_url = get_template_directory_uri().'/img/bg/'; // change this to where you store your bg images
@@ -127,6 +127,8 @@ $show_top_banner = array ( "Upload" , "Code", "None" );
 /*-----------------------------------------------------------------------------------*/
 /* The Options Array */
 /*-----------------------------------------------------------------------------------*/
+
+$prefix = 'ct_';
 
 // Set the Options Array
 global $of_options;
@@ -554,48 +556,49 @@ $of_options[] = array( "name" => __( "Site Header Ads\Banner Code" , "color-them
 
 /*
 =====================================================================================================================
-					Updater Settings
+					Twitter Settings
 =====================================================================================================================	
 */
 
-$of_options[] = array( "name" => __( "Updater Settings" , "color-theme-framework" ),
-					"type" => "heading");
+$of_options[] = array(	"name"		=> __( "Twitter Settings" , "color-theme-framework" ),
+						"type"		=> "heading"
+				);
 
-$of_options[] = array( "name" => "Envato WordPress Theme Updater",
-					"desc" => "",
-					"id" => "envato_introduction",
-					"std" => "<h3 style=\"margin: 0 0 10px;\">Envato WordPress Theme Updater.</h3>
-					The following settings allow you to set the ThemeForest Username and API key to get the updates of current theme.",
-					"icon" => true,
-					"type" => "info");
+$of_options[] = array( "name"		=> "OAuth Settings",
+					"desc"			=> "",
+					"id"			=> "introduction_oauth_settings",
+					"std"			=> "<h3 style=\"margin: 0;\">OAuth Settings</h3> Visit <a target=\"_target\" href=\"https://dev.twitter.com/apps/\" title=\"Twitter\" rel=\"nofollow\">this link</a> in a new tab, sign in with your account, click on \"Create a new application\" and create your own keys in case you don't have already.",
+					"icon"			=> true,
+					"type"			=> "info"
+				);
 
-$of_options[] = array( "name" => __( "ThemeForest Username" , "color-theme-framework" ),
-					"desc" => __( "Enter your username" , "color-theme-framework" ),
-					"id" => $shortname . "_envato_username",
-					"std" => "",
-					"type" => "text");
+$of_options[] = array(	"name"		=> __( "Consumer Key:" , "color-theme-framework" ),
+						"desc"		=> __( "Enter Your Twitter App Consumer Key" , "color-theme-framework" ),
+						"id"		=> "{$prefix}consumer_key",
+						"std"		=> "",
+						"type"		=> "text"
+				);
 
-$of_options[] = array( "name" => __( "API key" , "color-theme-framework" ),
-					"desc" => __( "Enter your API key. ThemeForest &rarr; Settings &rarr; API keys" , "color-theme-framework" ),
-					"id" => $shortname . "_envato_apikey",
-					"std" => "",
-					"type" => "text");
+$of_options[] = array(	"name"		=> __( "Consumer Secret:" , "color-theme-framework" ),
+						"desc"		=> __( "Enter Your Twitter App Consumer Key" , "color-theme-framework" ),
+						"id"		=> "{$prefix}consumer_secret",
+						"std"		=> "",
+						"type"		=> "text"
+				);
 
+$of_options[] = array(	"name"		=> __( "Access Token:" , "color-theme-framework" ),
+						"desc"		=> __( "Enter Your Twitter App Consumer Key" , "color-theme-framework" ),
+						"id"		=> "{$prefix}user_token",
+						"std"		=> "",
+						"type"		=> "text"
+				);
 
-/*$of_options[] = array( "name" => __( "Copyrights" , "color-theme-framework" ),
-					"type" => "heading");
-
-$of_options[] = array( "name" => __( "Copyrights" , "color-theme-framework" ), 
-                    "desc" => __( "Enter your copyrights" , "color-theme-framework" ), 
-                    "id" => $shortname . "_copyrights",
-                    "std" => '&copy; Copyright 2013. Proudly powered by  <a href="http://wordpress.org/">WordPress</a><br/><a href="https://github.com/sy4mil/Options-Framework">Slightly Modified Options Framework</a> by <a href="http://themeforest.net/user/SyamilMJ">Syamil MJ</a>',
-                    "type" => "textarea");
-
-$of_options[] = array( "name" => __( "Additional info" , "color-theme-framework" ), 
-                    "desc" => __( "Additional info (text or banner)" , "color-theme-framework" ), 
-                    "id" => $shortname . "_add_copyrights",
-                    "std" => '<a href="http://themeforest.net/user/ZERGE?ref=zerge">NewsTrick</a> Theme by <a href="http://color-theme.com/">Color Theme</a>',
-                    "type" => "textarea");*/
+$of_options[] = array(	"name"		=> __( "Access Token Secret:" , "color-theme-framework" ),
+						"desc"		=> __( "Enter Your Twitter App Consumer Key" , "color-theme-framework" ),
+						"id"		=> "{$prefix}user_secret",
+						"std"		=> "",
+						"type"		=> "text"
+				);
                     
 
 					

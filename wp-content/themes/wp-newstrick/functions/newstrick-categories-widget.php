@@ -74,7 +74,7 @@ function CT_load_categories_widgets()
 		<?php
 	  		$cat_left = '';
 	  		$cat_right = '';
-	  		$cats = explode("<br />",wp_list_categories('title_li=&echo=0&depth=1&style=none'));
+	  		$cats = explode("<br />",wp_list_categories('title_li=&echo=0&style=none'));
  	  		$cat_n = count($cats) - 1;
  	  		for ($i=0;$i<$cat_n;$i++):
 	    		if ($i<$cat_n/2):

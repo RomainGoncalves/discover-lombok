@@ -1,6 +1,7 @@
 <?php
 	if ( isset( $data['ct_theme_border_color'] ) ) $theme_border_color = stripslashes ( $data['ct_theme_border_color'] );
 	if ( isset( $data['ct_header_background'] ) ) $header_background = stripslashes ( $data['ct_header_background'] );
+	if ( isset( $data['ct_widget_title_color'] ) ) $widget_title_color = stripslashes ( $data['ct_widget_title_color'] );	
 	//if ( isset( $data['ct_menu_background'] ) ) $menu_background = stripslashes ( $data['ct_menu_background'] );
 	if ( isset( $data['ct_links_color'] ) ) $links_color = stripslashes ( $data['ct_links_color'] );
 	if ( isset( $data['ct_bg_attachment'] ) ) $bg_attachment = stripslashes ( $data['ct_bg_attachment'] );
@@ -15,6 +16,8 @@
 	if ( isset( $data['ct_ddmenu_bg_color'] ) ) $ddmenu_bg_color = stripslashes( $data['ct_ddmenu_bg_color'] );
 ?>
 
+.widget-title { background:<?php echo $widget_title_color; ?>; }
+.widget-title .arrow-down { border-top-color: <?php echo $widget_title_color; ?>; }
 
 /* Drop-Down menu bg color */
 .ct-dropdown-menu { background:<?php echo $ddmenu_bg_color; ?>; }

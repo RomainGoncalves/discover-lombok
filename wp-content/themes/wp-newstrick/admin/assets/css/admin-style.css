@@ -146,7 +146,7 @@ border-radius: 2px;
 #of_container #of-nav li.backupoptions a {background: url(../images/icon-backup.png) no-repeat;}
 #of_container #of-nav li.advancedsettings a {background: url(../images/wrench16.png) no-repeat;}
 #of_container #of-nav li.carouselsettings a {background: url(../images/icon-carousel.png) no-repeat;}
-#of_container #of-nav li.updatersettings a {background: url(../images/icon-envato.png) no-repeat;}
+#of_container #of-nav li.twittersettings a {background: url(../images/icon-twitter.png) no-repeat;}
 #of_container #of-nav li.copyrights a {background: url(../images/icon-copy.png) no-repeat;}
 
 
@@ -899,3 +899,5 @@ html body * span.clear, html body * div.clear, html body * li.clear, html body *
 	display:block; 
 	float:left;
 }
+
+.of-info h3 { margin-bottom: 5px !important; }

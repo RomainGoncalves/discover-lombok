@@ -14,8 +14,11 @@
 			Start Footer
 	----------------------------------------------------				
 	*/
-?>
 
+$blogid = get_current_blog_id();
+
+if($blogid != 1){
+?>
 <footer id="footer" role="contentinfo" itemscope="" itemtype="http://schema.org/WPFooter">
 
 	<?php
@@ -120,6 +123,14 @@ jQuery.noConflict()(function($){
 
 <!-- GOGLE ANALYTICS -->
 <?php echo stripslashes ( $data['ct_google_analytics'] ); ?>
+<?php
+
+}// End if blog isn't 1
+else{
+  wp_footer();//still get regular footer
+}
+
+?>
 
 </body>
 

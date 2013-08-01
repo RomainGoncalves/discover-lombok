@@ -106,16 +106,12 @@ class CT_slider_Widget extends WP_widget{
 				'post_type' => 'post',
 				'cat' => $categories,
 			));
+
+
 			
-			/*$carousel_posts = new WP_Query(array(
-				'showposts' => $posts,
-				'post_type' => 'post',
-				'cat' => $categories,
-			));			*/
-		
-	  
-		
-		/* ============ FACEBOOK ============ */
+		if ( $show_facebook2 == 'true') : //Show/Hide Counters
+
+			/* ============ FACEBOOK ============ */
 
 			if( !empty( $facebook_ID ) ) {
 
@@ -133,7 +129,7 @@ class CT_slider_Widget extends WP_widget{
 				}	
 			}
 
-		/* ============ YOUTUBE ============ */
+			/* ============ YOUTUBE ============ */
 
 			if( !empty( $youtube_ID ) ) {
 
@@ -150,25 +146,55 @@ class CT_slider_Widget extends WP_widget{
 				}	
 			}
 
-		/* ============ TWITTER ============ */
+			/* ============ TWITTER ============ */
 
-		ob_start();
-		
-		if( !empty( $twitter_ID ) ) { 
+			ob_start();
+
+			if( !empty( $twitter_ID ) and ($show_twitter == 'true') ) { 
 
 			$followers = get_transient('social_subscribers_counter_twitter_ct');
 			
 			if( false === $followers ) {	
 			
-				$twitterAccount = ct_twitter_count($twitter_ID);
-				$followers = $twitterAccount['followers_count'];
+				ini_set('display_errors', 1);
+				require_once("TwitterAPIExchange.php");
+
+				/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+				global $data;
+				$oauth_access_token = $data['ct_user_token'];
+				$oauth_access_token_secret = $data['ct_user_secret'];
+				$consumer_key = $data['ct_consumer_key'];
+				$consumer_secret = $data['ct_consumer_secret'];
+
+				$settings = array(
+    				'oauth_access_token' => $oauth_access_token,
+    				'oauth_access_token_secret' => $oauth_access_token_secret,
+    				'consumer_key' => $consumer_key,
+    				'consumer_secret' => $consumer_secret
+				);
+
+				if( ( empty($consumer_key) || empty($consumer_secret) || empty($oauth_access_token) || empty($oauth_access_token_secret) ) ) {
+					echo '<span class="counters_info">Please fill all Twitter Settings (menu Appearance -> Theme Options -> Twitter settings)</span>' . $after_widget;
+					return;
+				}
+
+				/** Perform a GET request and echo the response **/
+				/** Note: Set the GET field BEFORE calling buildOauth(); **/
+				$url = 'https://api.twitter.com/1.1/users/show.json';
+				$getfield = '?screen_name=' . $twitter_ID;
+				$requestMethod = 'GET';
+				$twitter = new TwitterAPIExchange($settings);
+				$response = $twitter->setGetfield($getfield)->buildOauth($url, $requestMethod)->performRequest();
+
+				$followers_decode = json_decode($response);
+				$followers = $followers_decode->followers_count;
 
 				if ( $followers != 0 ) {
 					set_transient('social_subscribers_counter_twitter_ct', $followers, 3600);
-				  }	
+				}	
 			} //false
 		}
-		
+		endif; // End Show/Hide Counters
 		?>
 
 	<?php if ( $position_nav == 'Bottom' ) : ?>
@@ -234,7 +260,7 @@ jQuery.noConflict()(function($){
 			  <?php endif; 
 			  
 			  if ( $show_post_text == 'true' ) : ?>
-			    <div class="content-mask"><p><?php $post_excerpt = get_the_excerpt(); echo strip_tags(substr($post_excerpt, 0, 120 ) ) . ' ...'; ?></p></div><!-- .content-mask -->
+			    <div class="content-mask"><p><?php $post_excerpt = get_the_excerpt(); echo strip_tags(mb_substr($post_excerpt, 0, 120 ) ) . ' ...'; ?></p></div><!-- .content-mask -->
 			  <?php endif; ?>
 	    	</li>
 		  <?php endif; ?>
@@ -296,7 +322,7 @@ jQuery.noConflict()(function($){
 <?php endif; ?> <!-- show carousel -->
 
 
-<?php if ( $show_facebook2 == 'true') : ?>
+<?php if ( $show_facebook2 == 'true') : //Show/Hide Counters ?>
 	<div id="entry-counters" class="border-1px">
 	  <ul id="social-counter">
 		<?php if ( $show_facebook == 'true') : $facebook_english_format = number_format($fans); ?>

@@ -39,7 +39,7 @@
        	    		<?php if ($post_type == 'standard_post') : ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">
 					<?php else: ?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemprop="review" itemscope itemtype="http://schema.org/Review">
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://data-vocabulary.org/Review">
 					<?php endif; ?>
 	  				
 	  					<?php 
@@ -77,24 +77,33 @@
 
 		  				<!-- different meta style if no thumbnail -->
 	        			<div class="meta-posted-by muted-small" style="border-top: 3px solid <?php echo $cat_color; ?>;">
-		        			<?php _e('Posted by ','color-theme-framework'); echo the_author_posts_link(); ?>
+		        			<?php 
+		        				$author = sprintf( '<span class="author vcard">%4$s<a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+								esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+								esc_attr( sprintf( __( 'View all posts by %s', 'color-theme-framework' ), get_the_author() ) ),
+								get_the_author(),
+								_e('Posted by ','color-theme-framework')
+								);
+								printf( $author	);
+							?>
 		        			<meta itemprop="author" content="<?php echo get_the_author_meta( 'nickname' ); ?>">
     						<span class="post-format" title="<?php echo $format; ?>" style="background-color:<?php echo $cat_color; ?>;"><i class="ct-format <?php echo $format; ?>"></i></span><!-- post-format -->
 	        			</div><!-- .meta-posted-by -->
 
 		  				<!-- title -->
-		  				<h1 class="entry-title" itemprop="name headline"><?php the_title(); ?></h1>
+		  				<?php if( $post_type == 'review_post' ) : ?>
+		  					<h1 class="entry-title" itemprop="itemreviewed"><?php the_title(); ?></h1>
+		  					<meta itemprop="reviewer" content="<?php the_author(); ?>">
+		  				<?php else : ?>
+		  					<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
+		  				<?php endif; ?>
 
 
 						<?php if( $post_type == 'review_post' ) : ?>
 			  			
 			  			<!-- Review Score -->
-			  			<div class="review-block" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+			  			<div class="review-block">
 			  				<div class="overall_score">
-
-			  					<!-- Review Microdata -->
-			  					<meta itemprop="worstRating" content = "0.5">
-
 
 			  					<?php 
 			  					$p_ID = get_the_ID();
@@ -128,11 +137,11 @@
 								$summary = get_post_meta( $post->ID, 'ct_mb_summary', true);
 
 			  					echo '<span class="score_name">' . $overall_name . '</span>'; 
-			  					echo '<span class="score_value" itemprop="ratingValue" style="color:' . $overall_score_color .';">' . $overall_score . '</span>'; 
+			  					echo '<span class="score_value" itemprop="rating" style="color:' . $overall_score_color .';">' . $overall_score . '</span>'; 
 					  			?>
 			  			
-			  					<meta itemprop="bestRating" content = "5">
 			  					<ul class="score-list">
+			  						<?php if ( !empty($c1_name) ): ?>
 			  						<li class="clearfix">
 			  							<?php 
 			  							echo '<span class="criteria_name">' . $c1_name . '</span>';
@@ -141,6 +150,8 @@
 										echo '</div>';	
 										?>
 				  					</li>
+				  					<?php endif;?>
+				  					<?php if ( !empty($c2_name) ): ?>
 			  						<li class="clearfix">
 		  								<?php 
 		  								echo '<span class="criteria_name">' . $c2_name . '</span>';
@@ -149,6 +160,8 @@
 										echo '</div>';	
 										?>			  			
 					  				</li>
+					  				<?php endif;?>
+					  				<?php if ( !empty($c3_name) ): ?>
 					  				<li class="clearfix">
 			  							<?php 
 			  							echo '<span class="criteria_name">' . $c3_name . '</span>';
@@ -157,6 +170,8 @@
 										echo '</div>';	
 										?>
 			  						</li>
+			  						<?php endif;?>
+			  						<?php if ( !empty($c4_name) ): ?>
 			  						<li class="clearfix">
 			  							<?php 
 			  							echo '<span class="criteria_name">' . $c4_name . '</span>';
@@ -165,6 +180,8 @@
 										echo '</div>';	
 										?>			  				
 			  						</li>
+			  						<?php endif;?>
+			  						<?php if ( !empty($c5_name) ): ?>
 			  						<li class="clearfix">
 			  							<?php 
 			  							echo '<span class="criteria_name">' . $c5_name . '</span>';
@@ -173,9 +190,9 @@
 										echo '</div>';	
 										?>			  				
 			  						</li>
-
+									<?php endif;?>
 			  						<?php if ( $summary != '' ) : ?>
-			  							<li class="summary-review clearfix" itemprop="description" style="background-color:<?php echo $overall_score_color; ?>;">
+			  							<li class="summary-review clearfix" itemprop="summary" style="background-color:<?php echo $overall_score_color; ?>;">
 			  								<?php echo $summary; ?>
 			  							</li>
 			  						<?php endif; ?>
@@ -186,7 +203,10 @@
 
 
 		  				<!-- post content -->
-		  				<div class="entry-content clearfix" itemprop="articleBody"><?php the_content(); ?></div><!-- .entry-content -->
+		  				<div class="entry-content clearfix" itemprop="articleBody">
+		  					<?php the_content(); ?>
+		  					<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'color-theme-framework' ), 'after' => '</div>' ) ); ?>
+		  				</div><!-- .entry-content -->
 
 						<?php 
 						// Displays a link to edit the current post, if a user is logged in and allowed to edit the post
@@ -222,15 +242,13 @@
 
 						<?php if ( $about_author == 'Show' ) { ?>
 						<!-- about the author -->			
-							<div id="author-info" class="clearfix" itemscope="" itemtype="http://schema.org/Person">
-								<div id="author-avatar" itemprop="image">
+							<div id="author-info" class="clearfix">
+								<div id="author-avatar">
 									<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyeleven_author_bio_avatar_size', 100 ) ); ?>
 								</div><!-- #author-avatar -->
 
 								<div id="author-description">
 									<h2 class="entry-title"><?php _e('About the author', 'color-theme-framework'); ?></h2>
-									<meta itemprop="name" content="<?php the_author_meta( 'first_name' ); ?> <?php the_author_meta( 'last_name' ); ?>">
-									<meta itemprop="url" content="<?php the_author_meta( 'user_url' ); ?>">
 									<!-- <meta itemprop="description" content="<?php the_author_meta( 'description' ); ?>"> -->
 									<p><?php the_author_meta( 'description' ); ?></p>
 									<a style="font-size: 11px;" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php _e('View all articles by ', 'color-theme-framework'); the_author_meta('display_name'); ?></a>

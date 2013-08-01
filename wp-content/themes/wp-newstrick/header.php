@@ -19,8 +19,6 @@
 <?php global $data; ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-<meta name="keywords" content="<?php bloginfo('name'); ?>" />
-<meta name="description" content="<?php bloginfo('description'); ?>" />  
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -80,7 +78,12 @@
         }
     ?>
 
+<?php
 
+$blogid = get_current_blog_id();
+
+if($blogid != 1){
+?>
 <!-- Start Top Content -->
 <div id="header" itemscope itemtype="http://schema.org/WPHeader" >
 
@@ -187,3 +190,7 @@ $type_menu = stripslashes( $data['ct_type_menu'] );
     <!-- END TOP BLOCK -->
 
   </div> <!-- #header -->
+
+<?php 
+  }//End if blogid != 1
+?>

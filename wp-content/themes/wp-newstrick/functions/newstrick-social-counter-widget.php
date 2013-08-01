@@ -72,7 +72,8 @@ class CT_social_counter_Widget extends WP_widget{
 		if ( $title ){
 			echo "\n<!-- START SOCIAL COUNTER WIDGET -->\n";
 			echo '<div class="' . $widget_width . '"><div class="widget margin-30t box border-1px bottom-shadow clearfix" style="background:' . $background . ';">';
-			echo '<div class="widget-title bottom-shadow" style="background:' . $background_title .';"><h2>' . $title . '</h2><div class="arrow-down" style="border-top-color:' . $background_title . ';"></div><!-- .arrow-down --><div class="plus"><a href=""><span></span></a></div><!-- .plus --></div><!-- widget-title -->'; 
+			//echo '<div class="widget-title bottom-shadow" style="background:' . $background_title .';"><h2>' . __($title, color-theme-framework) . '</h2><div class="arrow-down" style="border-top-color:' . $background_title . ';"></div><!-- .arrow-down --><div class="plus"><a href=""><span></span></a></div><!-- .plus --></div><!-- widget-title -->';
+			echo '<div class="widget-title bottom-shadow" style="background:' . $background_title .';"><h2>'; printf( __( '%s', 'color-theme-framework' ), $title );  echo '</h2><div class="arrow-down" style="border-top-color:' . $background_title . ';"></div><!-- .arrow-down --><div class="plus"><a href=""><span></span></a></div><!-- .plus --></div><!-- widget-title -->';
 		} else {
 			echo "\n<!-- START SOCIAL COUNTER WIDGET -->\n";
 			echo '<div class="' . $widget_width . '"><div class="widget margin-30t box border-1px bottom-shadow clearfix" style="background:' . $background . ';padding-top: 20px;">';
@@ -120,22 +121,58 @@ class CT_social_counter_Widget extends WP_widget{
 
 		ob_start();
 		
-		if( !empty( $twitter_ID ) ) { 
+		if( !empty( $twitter_ID ) and ($show_twitter == 'true') ) { 
 
 			$followers = get_transient('social_subscribers_counter_twitter_ct');
-			
+
 			if( false === $followers ) {	
 			
-				$twitterAccount = ct_twitter_count($twitter_ID);
-				$followers = $twitterAccount['followers_count'];
+				ini_set('display_errors', 1);
+				require_once("TwitterAPIExchange.php");
+
+				/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+				global $data;
+				$oauth_access_token = $data['ct_user_token'];
+				$oauth_access_token_secret = $data['ct_user_secret'];
+				$consumer_key = $data['ct_consumer_key'];
+				$consumer_secret = $data['ct_consumer_secret'];
+
+				$settings = array(
+    				'oauth_access_token' => $oauth_access_token,
+    				'oauth_access_token_secret' => $oauth_access_token_secret,
+    				'consumer_key' => $consumer_key,
+    				'consumer_secret' => $consumer_secret
+				);
+
+				if( ( empty($consumer_key) || empty($consumer_secret) || empty($oauth_access_token) || empty($oauth_access_token_secret) ) ) {
+					echo '<span class="counters_info">Please fill all Twitter Settings (menu Appearance -> Theme Options -> Twitter settings)</span>' . $after_widget;
+					return;
+				}
+
+				/** Perform a GET request and echo the response **/
+				/** Note: Set the GET field BEFORE calling buildOauth(); **/
+				$url = 'https://api.twitter.com/1.1/users/show.json';
+				$getfield = '?screen_name=' . $twitter_ID;
+				$requestMethod = 'GET';
+				$twitter = new TwitterAPIExchange($settings);
+				$response = $twitter->setGetfield($getfield)->buildOauth($url, $requestMethod)->performRequest();
+
+				$followers_decode = json_decode($response);
+				$followers = $followers_decode->followers_count;
 
 				if ( $followers != 0 ) {
 					set_transient('social_subscribers_counter_twitter_ct', $followers, 3600);
-				  }	
+				}	
 			} //false
 		}
 
-		?>
+
+
+
+
+
+
+?>
 
 	  <ul id="social-counter">	
 	  	
@@ -147,7 +184,7 @@ class CT_social_counter_Widget extends WP_widget{
 		</li>
 		<?php endif; ?>
 
-		<?php if ( $show_twitter == 'true') : $twitter_english_format = number_format($followers); ?>
+		<?php if ( $show_twitter == 'true') : $twitter_english_format = $followers; ?>
 		<li class="twitter-social">
 		  <a href="http://twitter.com/<?php echo $twitter_ID ?>"><span class="c-icon-big"></span>
 		  <span class="arrow-down"></span>

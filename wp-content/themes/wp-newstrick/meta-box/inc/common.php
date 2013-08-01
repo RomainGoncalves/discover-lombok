@@ -28,12 +28,13 @@ if ( ! class_exists( 'RWMB_Common' ) )
 		static function load_textdomain()
 		{
 			// l18n translation files
-			$locale = get_locale();
-			$dir    = trailingslashit( RWMB_DIR . 'lang' );
-			$mofile = "{$dir}{$locale}.mo";
+			//$locale = get_locale();
+			//$dir    = trailingslashit( RWMB_DIR . 'lang' );
+			//$mofile = "{$dir}{$locale}.mo";
 
 			// In themes/plugins/mu-plugins directory
 			//load_textdomain( 'rwmb', $mofile );
+			load_theme_textdomain( 'color-theme-framework', get_template_directory() . '/languages' );
 		}
 	}
 

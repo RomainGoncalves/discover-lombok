@@ -23,7 +23,7 @@
 
 		<?php elseif (has_post_thumbnail() && $audio_thumb_type == 'featured' ) : ?>
 	      <div class="widget-post-big-thumb ct-preload">
-		     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'post-thumb'); ?>	
+		     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'blog-thumb'); ?>	
 		     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>" /></a>
 		  </div><!-- .widget-post-big-thumb -->
 	     <?php endif;

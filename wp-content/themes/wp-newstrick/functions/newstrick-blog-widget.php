@@ -251,7 +251,7 @@ class CT_blog_Widget extends WP_widget{
 		  			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php _e('Permalink to ','color-theme-framework'); the_title(); ?>"><?php the_title(); ?></a></h2>
 
 		  			<!-- post excerpt -->
-		  			<div class="entry-content"><?php $post_excerpt = get_the_excerpt(); echo strip_tags(substr($post_excerpt, 0, $excerpt_lenght ) ) . ' ...'; ?></div><!-- .entry-content -->
+		  			<div class="entry-content"><?php $post_excerpt = get_the_excerpt(); echo strip_tags(mb_substr($post_excerpt, 0, $excerpt_lenght ) ) . ' ...'; ?></div><!-- .entry-content -->
 
 		  			<?php
 					// Check if post is Review, then show rating

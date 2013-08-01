@@ -92,10 +92,9 @@ class CT_Instagram_Widget extends WP_Widget {
 		endif;
 		?>
 
-		<!-- <style>
-			[class^="ct-instagram-"] li img { width: <?php echo $image_size . 'px'; ?>; height: <?php echo $image_size . 'px'; ?>; }
-		</style> -->
-
+		<?php if ( empty($access_token) || empty($client_id) ) : ?>
+			<p>You must define an accessToken and a clientID</p>
+		<?php else : ?>
 		<script type="text/javascript">
 		/* <![CDATA[ */
 		/***************************************************
@@ -107,7 +106,7 @@ class CT_Instagram_Widget extends WP_Widget {
 					accessToken: '<?php echo $access_token; ?>',
 					clientID: '<?php echo $client_id; ?>'
 				};
-	
+
 				//Call spectagram function on the container element and pass it your query
 				$('.ct-instagram-<?php echo $time_id; ?>').spectragram('<?php echo $get_feed_type; ?>', {
 					query: '<?php echo $your_query; ?>', //this gets user photo feed
@@ -118,7 +117,8 @@ class CT_Instagram_Widget extends WP_Widget {
 			});
 		});
 		/* ]]> */
-		</script>		
+		</script>
+		<?php endif; ?>
 
 		<ul class="ct-instagram-<?php echo $time_id; ?> clearfix"></ul>
 	
@@ -228,7 +228,7 @@ function form( $instance ) {
 	</p>
 
 	<p>
-		<label for="<?php echo $this->get_field_id( 'feed_type' ); ?>"><?php _e('Widget width:', 'color-theme-framework'); ?></label> 
+		<label for="<?php echo $this->get_field_id( 'feed_type' ); ?>"><?php _e('Feed type:', 'color-theme-framework'); ?></label> 
 		<select id="<?php echo $this->get_field_id( 'feed_type' ); ?>" name="<?php echo $this->get_field_name( 'feed_type' ); ?>" class="widefat" style="width:100%;">
 			<option <?php if ( 'UserFeed' == $instance['feed_type'] ) echo 'selected="selected"'; ?>>UserFeed</option>
 			<option <?php if ( 'Popular' == $instance['feed_type'] ) echo 'selected="selected"'; ?>>Popular</option>

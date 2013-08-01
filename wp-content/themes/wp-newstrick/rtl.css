@@ -37,7 +37,7 @@ a.comment-reply-link { float: right; }
 ul, ol { margin: 0 25px 10px 0; }
 #ajax-contact-form .span10 { float: right; }
 #ajax-contact-form .span5 { float: right; }
-.widget-slider, .flex-carousel, .small-slider { direction: ltr; }
+.widget-slider, .flex-carousel, .small-slider { direction: ltr; overflow: hidden; }
 .flexslider .slides > li {text-align:right;direction:rtl;}
 .small-slider .flex-next { left: 20px; right: inherit;}
 .small-slider .flex-prev { left: 0; right: inherit;}

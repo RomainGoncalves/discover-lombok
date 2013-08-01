@@ -16,7 +16,7 @@ $email = $_POST['email'];
 $subject = htmlspecialchars($_POST['subject']);
 $message = htmlspecialchars($_POST['message']);
  
-$error = array() ;
+$error = array();
  
  
 if(empty($name))

@@ -69,6 +69,7 @@ class CT_Text_Widget extends WP_Widget {
 
 		$margins = 20;
 		$border = 1;
+		$shadow = 0;
 		?>
 		
 		<!-- BEGIN WIDGET -->
@@ -81,9 +82,9 @@ class CT_Text_Widget extends WP_Widget {
 			echo '<div class="widget-title bottom-shadow" style="background:' . $background_title .';"><h2>' . $title . '</h2><div class="arrow-down" style="border-top-color:' . $background_title . ';"></div><!-- .arrow-down --><div class="plus"><span></span></div><!-- .plus --></div><!-- widget-title -->'; 
 		} else {
 			if ( $remove_margins == 'true' ) { $margins = 0; }
-			if ( $remove_background == 'true' ) { $background = 'none'; $border = 0; }
+			if ( $remove_background == 'true' ) { $background = 'none'; $border = 0; $shadow = 'none'; }
 			echo "\n<!-- START ADVANCED TEXT WIDGET -->\n";
-			echo '<div class="' . $widget_width . '"><div class="widget margin-30t box border-1px bottom-shadow clearfix" style="background:' . $background . ';padding-top: 20px; padding:' . $margins . 'px; border:' . $border . 'px;">';
+			echo '<div class="' . $widget_width . '"><div class="widget margin-30t box border-1px bottom-shadow clearfix" style="background:' . $background . ';padding-top: 20px; padding:' . $margins . 'px; border:' . $border . 'px; box-shadow:' . $shadow .'">';
 		}
 		?>
 		
