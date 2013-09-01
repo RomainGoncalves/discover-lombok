@@ -1,0 +1,11 @@
+/*
+Theme Name:     Newstrick Child
+Theme URI:      http://discover-lombok.com/
+Description:    Child theme for Newstrick
+Author:         Editions Tucana
+Author URI:     http://discover-lombok.com/
+Template:       newstrick
+Version:        1.0.0
+*/
+ 
+@import url("../newstrick/style.css");

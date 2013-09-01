@@ -44,7 +44,7 @@ class ct_v_newsticker_Widget extends WP_widget{
 		$control_ops = array( 'width' => 200, 'height' => 350, 'id_base' => 'ct_v_newsticker_widget' );
 		
 		/* Create the widget. */
-		$this->WP_Widget( 'ct_v_newsticker_widget', __( 'CT: News Ticker Vertical' , 'color-theme-framework' ) ,  $widget_ops, $control_ops );
+		$this->WP_Widget( 'ct_v_newsticker_widget', __( 'CT: News Ticker Vertical - Original' , 'color-theme-framework' ) ,  $widget_ops, $control_ops );
 		
 	}
 	
