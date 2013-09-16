@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Newstrick Theme . A ZERGE design (http://www.color-theme.com - http://themeforest.net/user/ZERGE) - Proudly powered by WordPress (http://wordpress.org) -->
 
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>

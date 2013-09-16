@@ -1,0 +1,2867 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NewsTrick - Responsive WordPress Blog Theme v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-05 01:51+1000\n"
+"PO-Revision-Date: 2013-09-05 02:10+1000\n"
+"Last-Translator: Romain Goncalves <gotthefevermedia@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: subscribe-to-comments.php:70
+msgid "<strong>Error: </strong>"
+msgstr ""
+
+#: subscribe-to-comments.php:85
+msgid "Subscribe without commenting"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:87
+#, fuzzy
+msgid "E-Mail:"
+msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:89
+#, fuzzy
+msgid "Subscribe"
+msgstr "Abonnés"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:141
+#, fuzzy
+msgid "Subscribe to Comments Options"
+msgstr "1 réaction"
+
+#: subscribe-to-comments.php:144
+msgid "\"From\" name for notifications:"
+msgstr ""
+
+#: subscribe-to-comments.php:145
+msgid "\"From\" e-mail addresss for notifications:"
+msgstr ""
+
+#: subscribe-to-comments.php:146
+msgid ""
+"Do a CSS \"clear\" on the subscription checkbox/message (uncheck this if the "
+"checkbox/message appears in a strange location in your theme)"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:149
+#, fuzzy
+msgid "Comment Form Text"
+msgstr "Le fil des commentaires est fermé."
+
+#: subscribe-to-comments.php:151
+msgid ""
+"Customize the messages shown to different people.  Use <code>[manager_link]</"
+"code> to insert the URI to the Subscription Manager."
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:155
+#, fuzzy
+msgid "Not subscribed"
+msgstr "Abonnés"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:157
+#, fuzzy
+msgid "Subscribed"
+msgstr "Abonnés"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:159
+#, fuzzy
+msgid "Entry Author"
+msgstr "Auteur"
+
+#: subscribe-to-comments.php:165
+msgid "Use custom style for Subscription Manager"
+msgstr ""
+
+#: subscribe-to-comments.php:167
+msgid ""
+"These settings only matter if you are using a custom style.  <code>"
+"[theme_path]</code> will be replaced with the path to your current theme."
+msgstr ""
+
+#: subscribe-to-comments.php:170
+msgid "Path to header:"
+msgstr ""
+
+#: subscribe-to-comments.php:171
+msgid "Path to sidebar:"
+msgstr ""
+
+#: subscribe-to-comments.php:172
+msgid "Path to footer:"
+msgstr ""
+
+#: subscribe-to-comments.php:175
+msgid "HTML for before the subscription manager:"
+msgstr ""
+
+#: subscribe-to-comments.php:176
+msgid "HTML for after the subscription manager:"
+msgstr ""
+
+#: subscribe-to-comments.php:201
+msgid "Options saved."
+msgstr ""
+
+#: subscribe-to-comments.php:208
+msgid "Update Options &raquo;"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:374
+#, fuzzy
+msgid "Please provide a valid e-mail address."
+msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:378
+#, fuzzy
+msgid "This e-mail address may not be subscribed"
+msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+#: subscribe-to-comments.php:384 subscribe-to-comments.php:400
+msgid "You appear to be already subscribed to this entry."
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:390
+#, fuzzy
+msgid "Comments are not allowed on this entry."
+msgstr "Le fil des commentaires est fermé."
+
+#: subscribe-to-comments.php:597
+#, php-format
+msgid "There is a new comment on the post \"%s\""
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:598
+#, fuzzy, php-format
+msgid "Author: %s\n"
+msgstr "Archives de l'auteur: %s"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:599
+#, fuzzy
+msgid "Comment:\n"
+msgstr "1 réaction"
+
+#: subscribe-to-comments.php:600
+msgid "See all comments on this post here:\n"
+msgstr ""
+
+#: subscribe-to-comments.php:603
+msgid ""
+"To manage your subscriptions or to block all notifications from this site, "
+"click the link below:\n"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:606
+#, fuzzy, php-format
+msgid "New Comment On: %s"
+msgstr "Le fil des commentaires est fermé."
+
+#: subscribe-to-comments.php:625
+msgid "E-mail change confirmation"
+msgstr ""
+
+#: subscribe-to-comments.php:626
+#, php-format
+msgid ""
+"You are receiving this message to confirm a change of e-mail address for "
+"your subscriptions at \"%s\"\n"
+"\n"
+msgstr ""
+
+#: subscribe-to-comments.php:627
+#, php-format
+msgid ""
+"To change your e-mail address to %s, click this link:\n"
+"\n"
+msgstr ""
+
+#: subscribe-to-comments.php:629 subscribe-to-comments.php:641
+msgid "If you did not request this action, please disregard this message."
+msgstr ""
+
+#: subscribe-to-comments.php:637
+msgid "E-mail block confirmation"
+msgstr ""
+
+#: subscribe-to-comments.php:638
+#, php-format
+msgid ""
+"You are receiving this message to confirm that you no longer wish to receive "
+"e-mail comment notifications from \"%s\"\n"
+"\n"
+msgstr ""
+
+#: subscribe-to-comments.php:639
+msgid ""
+"To cancel all future notifications for this address, click this link:\n"
+"\n"
+msgstr ""
+
+#: subscribe-to-comments.php:679
+msgid "click here"
+msgstr ""
+
+#: subscribe-to-comments.php:701
+msgid "Notify me of followup comments via e-mail"
+msgstr "Je souhaite être informé des prochains commentaires sur cet article."
+
+#: subscribe-to-comments.php:701
+msgid ""
+"You are subscribed to this entry.  <a href=\"[manager_link]\">Manage your "
+"subscriptions</a>."
+msgstr ""
+
+#: subscribe-to-comments.php:701
+msgid ""
+"You are the author of this entry.  <a href=\"[manager_link]\">Manage "
+"subscriptions</a>."
+msgstr "Vous etes l'auteur<a href=\"[manager_link]\">Manage subscriptions</a>."
+
+#: subscribe-to-comments.php:801
+msgid "Comment Subscription Manager"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:801 subscribe-to-comments.php:1152
+#, fuzzy
+msgid "Subscriptions"
+msgstr "Abonnés"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:803
+#, fuzzy
+msgid "Subscribe to Comments"
+msgstr "Commentaires récents"
+
+#: subscribe-to-comments.php:882
+msgid "You may not access this page without a valid key."
+msgstr ""
+
+#: subscribe-to-comments.php:890
+#, php-format
+msgid ""
+"All notifications that were formerly sent to <strong>%1$s</strong> will now "
+"be sent to <strong>%2$s</strong>!"
+msgstr ""
+
+#: subscribe-to-comments.php:902
+#, php-format
+msgid "<strong>%1$s</strong> %2$s removed successfully."
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:902
+#, fuzzy
+msgid "subscriptions"
+msgstr "Abonnés"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:902
+msgid "subscription"
+msgstr "Abonnés"
+
+#: subscribe-to-comments.php:907
+#, php-format
+msgid "The block on <strong>%s</strong> has been successfully removed."
+msgstr ""
+
+#: subscribe-to-comments.php:909
+#, php-format
+msgid "<strong>%s</strong> isn't blocked!"
+msgstr ""
+
+#: subscribe-to-comments.php:914
+#, php-format
+msgid ""
+"<strong>%s</strong> has been blocked from receiving notifications.  You will "
+"have to have the administrator remove the block before you will be able to "
+"change your notification address."
+msgstr ""
+
+#: subscribe-to-comments.php:917
+#, php-format
+msgid ""
+"Your change of e-mail request was successfully received.  Please check your "
+"old account (<strong>%s</strong>) in order to confirm the change."
+msgstr ""
+
+#: subscribe-to-comments.php:922
+#, php-format
+msgid ""
+"Your request to block <strong>%s</strong> from receiving any further "
+"notifications has been received.  In order for you to complete the block, "
+"please check your e-mail and click on the link in the message that has been "
+"sent to you."
+msgstr ""
+
+#: subscribe-to-comments.php:926
+#, php-format
+msgid "<strong>%1$s</strong> has been successfully subscribed to %2$s"
+msgstr ""
+
+#: subscribe-to-comments.php:931
+#, php-format
+msgid ""
+"<strong>%1$s</strong> has been added to the \"do not mail\" list. You will "
+"no longer receive any notifications from this site. If this was done in "
+"error, please contact the <a href=\"mailto:%2$s\">site administrator</a> to "
+"remove this block."
+msgstr ""
+
+#: subscribe-to-comments.php:933
+#, php-format
+msgid "<strong>%s</strong> has already been blocked!"
+msgstr ""
+
+#: subscribe-to-comments.php:949 subscribe-to-comments.php:974
+#, php-format
+msgid "%s Comment Subscription Manager"
+msgstr ""
+
+#: subscribe-to-comments.php:977
+#, php-format
+msgid "Return to the page you were viewing: %s"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:988
+#, fuzzy
+msgid "Remove Block"
+msgstr "Editer"
+
+#: subscribe-to-comments.php:991
+#, php-format
+msgid ""
+"Click the button below to remove the block on <strong>%s</strong>.  This "
+"should only be done if the user has specifically requested it."
+msgstr ""
+
+#: subscribe-to-comments.php:999
+msgid "Remove Block &raquo;"
+msgstr ""
+
+#: subscribe-to-comments.php:1007
+msgid "Blocked"
+msgstr ""
+
+#: subscribe-to-comments.php:1010
+#, php-format
+msgid ""
+"You have indicated that you do not wish to receive any notifications at "
+"<strong>%1$s</strong> from this site. If this is incorrect, or if you wish "
+"to have the block removed, please contact the <a href=\"mailto:%2$s\">site "
+"administrator</a>."
+msgstr ""
+
+#: subscribe-to-comments.php:1025
+#, php-format
+msgid "<strong>%s</strong> is not subscribed to any posts on this site."
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1027
+#, fuzzy, php-format
+msgid "<strong>%s</strong> is not a valid e-mail address."
+msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+#: subscribe-to-comments.php:1040
+msgid "&laquo; Back"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1043
+#, fuzzy
+msgid "Find Subscriptions"
+msgstr "Abonnés"
+
+#: subscribe-to-comments.php:1046
+msgid "Enter an e-mail address to view its subscriptions or undo a block."
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1054
+#, fuzzy
+msgid "Search &raquo;"
+msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1062
+#, fuzzy
+msgid "Top Subscriber List"
+msgstr "Abonnés"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1064
+#, fuzzy
+msgid "Subscriber List"
+msgstr "Abonnés"
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1083
+#, fuzzy
+msgid "Show all subscribers"
+msgstr "Abonnés"
+
+#: subscribe-to-comments.php:1085
+msgid ""
+"Show list of subscribers in <code>CC:</code>-field format (for bulk e-"
+"mailing)"
+msgstr ""
+
+#: subscribe-to-comments.php:1087
+msgid "&laquo; Back to regular view"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1102
+#, fuzzy
+msgid "Top Subscribed Posts"
+msgstr "Abonnés"
+
+#: subscribe-to-comments.php:1155
+#, php-format
+msgid ""
+"<strong>%s</strong> is subscribed to the posts listed below. To unsubscribe "
+"to one or more posts, click the checkbox next to the title, then click "
+"\"Remove Selected Subscription(s)\" at the bottom of the list."
+msgstr ""
+
+#: subscribe-to-comments.php:1169
+msgid "Invert Checkbox Selection"
+msgstr ""
+
+#: subscribe-to-comments.php:1173
+msgid "Remove Selected Subscription(s) &raquo;"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1180
+#, fuzzy
+msgid "Advanced Options"
+msgstr "Cliquez pour lire "
+
+#: subscribe-to-comments.php:1183
+msgid "Block All Notifications"
+msgstr ""
+
+#: subscribe-to-comments.php:1190
+#, php-format
+msgid ""
+"If you would like <strong>%s</strong> to be blocked from receiving any "
+"notifications from this site, click the button below.  This should be "
+"reserved for cases where someone is signing you up for notifications without "
+"your consent."
+msgstr ""
+
+#: subscribe-to-comments.php:1194
+msgid "Block Notifications &raquo;"
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1200
+#, fuzzy
+msgid "Change E-mail Address"
+msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+#: subscribe-to-comments.php:1207
+#, php-format
+msgid ""
+"If you would like to change the e-mail address for your subscriptions, enter "
+"the new address below.  You will be required to verify this request by "
+"clicking a special link sent to your current address (<strong>%s</strong>)."
+msgstr ""
+
+# @ color-theme-framework
+#: subscribe-to-comments.php:1211
+#, fuzzy
+msgid "New E-mail Address:"
+msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+#: subscribe-to-comments.php:1216
+msgid "Change E-mail Address &raquo;"
+msgstr ""
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Support Forums"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Network Admin: %s"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Visit Site"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Site"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "My Sites"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Network Admin"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sites"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New Post"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Manage Comments"
+#~ msgstr "Commentaires sur Facebook"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "add new from admin bar"
+#~ msgid "Link"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "add new from admin bar"
+#~ msgid "User"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "admin bar menu group label"
+#~ msgid "Add New"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%s comment awaiting moderation"
+#~ msgid_plural "%s comments awaiting moderation"
+#~ msgstr[0] "Votre commentaire est en attente de modération. Merci."
+#~ msgstr[1] "Votre commentaire est en attente de modération. Merci."
+
+# @ color-theme-framework
+#~ msgid "Search"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "XML error: %s at line %d"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Posts by %s"
+#~ msgstr "Articles par mot-clé: %s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Last updated: %s"
+#~ msgstr "Articles par mot-clé: %s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View all posts in %s"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Uncategorized"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No categories"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View all posts filed under %s"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Feed for all posts filed under %s"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No Image"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select File"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Site Title & Tagline"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Site Title"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Static Front Page"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Front page displays"
+#~ msgstr "Articles par mot-clé: %s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Your latest posts"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "A static page"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Front page"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Posts page"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Commentaires sur Facebook"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Saved."
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Title"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image resize failed."
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image crop failed."
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image rotate failed."
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image flip failed."
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#~ msgid "Anonymous"
+#~ msgstr "Anonyme"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Software Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Software Version"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Site URL"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Home URL"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image default link type"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Template"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Post Thumbnail"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Site Tagline"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Date Format"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Time Format"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you are not allowed to edit this post."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you are not allowed to post on this site."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you are not allowed to stick this post."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you are not allowed to delete this post."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you cannot edit posts on this site."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Invalid comment ID."
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "A valid email address is required"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you are not allowed to edit this post type."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you do not have access to user data on this site."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you are not allowed to publish pages on this site."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, you are not allowed to publish posts on this site."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "% Comments"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No Comments"
+#~ msgstr "Commentaires sur Facebook"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "1 Comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "noun"
+#~ msgid "Comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments Off"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comment on %s"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#~ msgid "Reply"
+#~ msgstr "Répondre"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Leave a Comment"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Log in to leave a Comment"
+#~ msgstr "Commentaires récents"
+
+#~ msgid "Leave a Reply"
+#~ msgstr "Repondez"
+
+#, fuzzy
+#~ msgid "Leave a Reply to %s"
+#~ msgstr "Repondez "
+
+# @ color-theme-framework
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Votre commentaire est en attente de modération. Merci."
+
+# @ color-theme-framework
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#~ msgid "(Edit)"
+#~ msgstr "(Modifier)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Email"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Website"
+#~ msgstr "Site web ou blog :"
+
+#~ msgid ""
+#~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
+#~ "of this account\">Log out?</a>"
+#~ msgstr ""
+#~ "Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+#~ "\"Déconnecter de ce compte\">Déconnexion ?</a>"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Your email address will not be published."
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+#~ msgid "Cancel reply"
+#~ msgstr "Annuler la réponse"
+
+# @ color-theme-framework
+#~ msgid "Post Comment"
+#~ msgstr "Postez un commentaire"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Unapproved"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "adjective"
+#~ msgid "Approved"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Pages"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#~ msgid "Title:"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Page title"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Page ID"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select Link Category:"
+#~ msgstr "Articles par rubrique : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Link title"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Link rating"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Show Link Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Archives"
+#~ msgstr "Archives du blog"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select Month"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Show post counts"
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Show hierarchy"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "The most recent posts on your site"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "The most recent comments"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#~ msgid "Recent Comments"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "widgets"
+#~ msgid "%1$s on %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Number of comments to show:"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select Menu:"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "First Post"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Last Post"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments on %s"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments for %1$s searching on %2$s"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments for %s"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comment on %1$s by %2$s"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments on: %s"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Invalid file type"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select a city"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search for:"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Username"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Site Admin"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Results %1$s %2$s"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Page not found"
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$d"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "calendar caption"
+#~ msgid "%1$s %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View posts for %1$s %2$s"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s Feed"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s Comments Feed"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s %3$s Comments Feed"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s %3$s Category Feed"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s %3$s Tag Feed"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s Posts by %3$s Feed"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s %2$s %3$s Feed"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "&laquo; Previous"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Next &raquo;"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments Feed"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit This"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Previous Post"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Next Post"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Next Page &raquo;"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "&laquo; Previous Page"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Newer Comments &raquo;"
+#~ msgstr "Commentaires récents &rarr;"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "&laquo; Older Comments"
+#~ msgstr "&larr; Commentaires précédents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Mon"
+#~ msgstr "le "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "March"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "am"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select Files"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Image"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Abonnés"
+
+# @ color-theme-framework
+#~ msgid "Edit"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Link To"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Size"
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Full Size"
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Gallery Settings"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Upload Images"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Insert Media"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No items found."
+#~ msgstr "Aucun résultat !"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Insert into page"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Insert from URL"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Gallery"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Update gallery"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add to gallery"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add to Gallery"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "[%1$s] Activate %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "The user is already active."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "The site is already active."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Could not create user"
+#~ msgstr "L'auteur de cet article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "That username is already activated."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New %1$s Site: %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New %1$s User: %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Author : %1$s (IP: %2$s , %3$s)"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "E-mail : %s"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comment: "
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "[%1$s] Comment: \"%2$s\""
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "[%1$s] Trackback: \"%2$s\""
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "[%1$s] Pingback: \"%2$s\""
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Permalink: %s"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Delete it: %s"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "A new comment on the post \"%s\" is waiting for your approval"
+#~ msgstr "Votre commentaire est en attente de modération. Merci."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Approve it: %s"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "[%1$s] Please moderate: \"%2$s\""
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Username: %s"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "E-mail: %s"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "(more...)"
+#~ msgstr "Lire la suite..."
+
+# @ color-theme-framework
+#~ msgid "Pages:"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#~ msgid "Next page"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#~ msgid "Previous page"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Home"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post revision"
+#~ msgid "%1$s by %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "add new on admin bar"
+#~ msgid "Post"
+#~ msgstr "Publié par "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "add new on admin bar"
+#~ msgid "Page"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "add new media"
+#~ msgid "Add New"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Media"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post"
+#~ msgid "Scheduled"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post"
+#~ msgid "Trash"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post type general name"
+#~ msgid "Posts"
+#~ msgstr "Publié par "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post type general name"
+#~ msgid "Pages"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post type singular name"
+#~ msgid "Post"
+#~ msgstr "Publié par "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post type singular name"
+#~ msgid "Page"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post"
+#~ msgid "Add New"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "page"
+#~ msgid "Add New"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add New Post"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add New Page"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Post"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Page"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New Page"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View Post"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View Page"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Posts"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Pages"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No posts found."
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No pages found."
+#~ msgstr "Aucun résultat !"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No posts found in Trash."
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No pages found in Trash."
+#~ msgstr "Aucun résultat !"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Parent Page:"
+#~ msgstr "Articles par rubrique : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "All Posts"
+#~ msgstr "Articles sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "All Pages"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Images"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Manage Images"
+#~ msgstr "Commentaires sur Facebook"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "Post format"
+#~ msgid "Link"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "Post format"
+#~ msgid "Image"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Next &gt;"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add Link"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No matches found."
+#~ msgstr "Aucun résultat !"
+
+#, fuzzy
+#~ msgid "Approve and Reply"
+#~ msgstr "Repondez"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Schedule for:"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Show more comments"
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No more comments found."
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Schedule"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Save Draft"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Remove From Bulk Edit"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select Color"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "search results"
+#~ msgid "No results found."
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Link Categories"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Link Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Link Categories"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "All Link Categories"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Link Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Update Link Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add New Link Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New Link Category Name"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "post format"
+#~ msgid "Format"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "taxonomy general name"
+#~ msgid "Categories"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Tags"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Categories"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Popular Tags"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "All Tags"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "All Categories"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Parent Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Parent Category:"
+#~ msgstr "Articles par rubrique : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Tag"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View Tag"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Update Tag"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Update Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add New Tag"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add New Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New Tag Name"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New Category Name"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "A name is required for this term"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "Display name based on first name and last name"
+#~ msgid "%1$s %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select all"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Address"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Full"
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Preview"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Acronym"
+#~ msgstr "Anonyme"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit CSS Style"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Delete table"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No misspellings found."
+#~ msgstr "Aucun résultat !"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Font size"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Subscript"
+#~ msgstr "Abonnés"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Superscript"
+#~ msgstr "Abonnés"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select text color"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image properties"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "New document"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Plugins"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Plugin"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Anchor name"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select a color"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Named"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "html attribute"
+#~ msgid "Name:"
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image URL"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image description"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image list"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Text top"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Text bottom"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "html attribute"
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Invoke URLs"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Base URL"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Image status"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Poster"
+#~ msgstr "Publié par "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "More..."
+#~ msgstr "Lire la suite..."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Next page..."
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Delete Gallery"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Advanced Settings"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Link to Image"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Advanced Link Settings"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s - Comments on %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No comments yet."
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Leave a comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "E-mail"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Your Comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Sorry, the comment form is closed at this time."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#~ msgid "Comments are closed."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s and %2$s."
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments (RSS)"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#~ msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+#~ msgstr "La page que vous cherchez n'existe pas !"
+
+# @ color-theme-framework
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching can help."
+#~ msgstr ""
+#~ "Souhaitez-vous faire une autre recherche en utilisant le moteur de "
+#~ "recherche ci-dessous ?"
+
+# @ color-theme-framework
+#~ msgid "1 comment"
+#~ msgid_plural "%1$s comments"
+#~ msgstr[0] "1 réaction"
+#~ msgstr[1] "%1$s réactions"
+
+# @ color-theme-framework
+#~ msgid "&larr; Older Comments"
+#~ msgstr "&larr; Commentaires précédents"
+
+# @ color-theme-framework
+#~ msgid "Newer Comments &rarr;"
+#~ msgstr "Commentaires récents &rarr;"
+
+# @ color-theme-framework
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Archives du jour: %s"
+
+# @ color-theme-framework
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Archives mensuelles: %s"
+
+# @ color-theme-framework
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Archives annuelles: %s"
+
+# @ color-theme-framework
+#~ msgid "Blog Archives"
+#~ msgstr "Archives du blog"
+
+# @ color-theme-framework
+#~ msgid "Posted by "
+#~ msgstr "Publié par "
+
+# @ color-theme-framework
+#~ msgid "on"
+#~ msgstr "le "
+
+# @ color-theme-framework
+#~ msgid "Permalink to "
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#~ msgid "Author Archives: %s"
+#~ msgstr "Archives de l'auteur: %s"
+
+# @ color-theme-framework
+#~ msgid "Full Name: "
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#~ msgid "Website: "
+#~ msgstr "Site web ou blog :"
+
+# @ color-theme-framework
+#~ msgid "Info: "
+#~ msgstr "Info : "
+
+# @ color-theme-framework
+#~ msgid "Posts by Category: "
+#~ msgstr "Articles par rubrique : "
+
+# @ color-theme-framework
+#~ msgid "Search Results for"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#~ msgid "Nothing Found"
+#~ msgstr "Aucun résultat !"
+
+# @ color-theme-framework
+#~ msgid ""
+#~ "Sorry, but nothing matched your search criteria. Please try again with "
+#~ "some different keywords."
+#~ msgstr ""
+#~ "Aucun article ne correspond à votre recherche. Vous pouvez recommencer si "
+#~ "vous le souhaitez avec une autre demande."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View all posts by %s"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#~ msgid "About the author"
+#~ msgstr "L'auteur de cet article"
+
+# @ color-theme-framework
+#~ msgid "View all articles by "
+#~ msgstr "Voir tous les articles par "
+
+# @ color-theme-framework
+#~ msgid "Facebook Comments"
+#~ msgstr "Commentaires sur Facebook"
+
+# @ color-theme-framework
+#~ msgid "Posts by tag: %s"
+#~ msgstr "Articles par mot-clé: %s"
+
+# @ color-theme-framework
+#~ msgid "Views"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#~ msgid "more"
+#~ msgstr "lire la suite..."
+
+# @ color-theme-framework
+#~ msgid "Post author"
+#~ msgstr "Auteur de l'article"
+
+# @ color-theme-framework
+#~ msgid "I like this article"
+#~ msgstr "J'aime cet article !"
+
+# @ color-theme-framework
+#~ msgid "Read more..."
+#~ msgstr "Lire la suite..."
+
+# @ color-theme-framework
+#~ msgid "Last 30 Posts"
+#~ msgstr "30 articles récents"
+
+# @ color-theme-framework
+#~ msgid "Archives by Month:"
+#~ msgstr "Archives par mois : "
+
+# @ color-theme-framework
+#~ msgid "Archives by Subject:"
+#~ msgstr "Archives par sujet : "
+
+# @ color-theme-framework
+#~ msgid "Message was sent to website administrator. Thank you!"
+#~ msgstr "Un message a été envoyé à l'administrateur de ce site. Merci !"
+
+# @ color-theme-framework
+#~ msgid "Your Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#~ msgid "Your Email Address"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#~ msgid "Your URL"
+#~ msgstr "L'URL de votre site web (facultatif)"
+
+# @ color-theme-framework
+#~ msgid "Subject"
+#~ msgstr "Objet"
+
+# @ color-theme-framework
+#~ msgid "Type your questions here..."
+#~ msgstr "Saisissez votre question ici..."
+
+# @ color-theme-framework
+#~ msgid "Send Message"
+#~ msgstr "Envoyer"
+
+# @ color-theme-framework
+#~ msgid "Latest Posts"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#~ msgid "View all posts in "
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#~ msgid "Facebook Subscribe"
+#~ msgstr "Sur Facebook"
+
+# @ color-theme-framework
+#~ msgid "No related posts were found"
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#~ msgid "Related Posts"
+#~ msgstr "Articles sur le même sujet"
+
+# @ color-theme-framework
+#~ msgid "Followers"
+#~ msgstr "Abonnés"
+
+# @ color-theme-framework
+#~ msgid "Subscribers"
+#~ msgstr "Abonnés"
+
+# @ color-theme-framework
+#~ msgid "Click on image to start slideshow"
+#~ msgstr "Cliquez sur l'image pour démarrer le diaporama"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comment History"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Settings"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Show approved comments"
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Save Changes"
+#~ msgstr "Page précédente"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Not yet"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%s approved"
+#~ msgid_plural "%s approved"
+#~ msgstr[0] "Le fil des commentaires est fermé."
+#~ msgstr[1] "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s comments recovered."
+#~ msgstr "Le fil des commentaires est fermé."
+
+#, fuzzy
+#~ msgid "All spam deleted."
+#~ msgstr ""
+#~ "#-#-#-#-#  5extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  11extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Delete all"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Spam &raquo;"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "De-spam marked comments &raquo;"
+#~ msgstr "Commentaires récents &rarr;"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No results found."
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Network Shared Media"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "You don't have access to any other sites media..."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Selected site:"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select site:"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Select &#187;"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Media"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "All Types"
+#~ msgstr "Pages : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "&laquo;"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "&raquo;"
+#~ msgstr "Page suivante"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Show all dates"
+#~ msgstr "Voir tous les articles par "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Site Title:"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Email&nbsp;Address:"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "media item"
+#~ msgid "Edit"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit Comment"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Moderate Comment"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Spam Comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Trash Comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Recent Rockstars"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "comments per page (screen options)"
+#~ msgid "Comments"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Moderating Comments"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Comments"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Last edited on %1$s at %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Name:"
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "link name"
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "Taxonomy Name"
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Categories:"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Authors:"
+#~ msgstr "Auteur"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Links"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments %s"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "All Comments"
+#~ msgstr "&larr; Commentaires précédents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "theme editor"
+#~ msgid "Editor"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "plugin editor"
+#~ msgid "Editor"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Permalinks"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Menu Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "A comment is held for moderation"
+#~ msgstr "Votre commentaire est en attente de modération. Merci."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comment Blacklist"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "sample permalink base"
+#~ msgid "archives"
+#~ msgstr "Archives du blog"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Category base"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Full text"
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Default Post Category"
+#~ msgstr "Articles par rubrique : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "click images to select"
+#~ msgstr "Cliquez sur l'image pour démarrer le diaporama"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View post"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "theme name"
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Hide this update"
+#~ msgstr "J'aime cet article !"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Edit User"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "First Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "ID #%1$s: %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Attribute all posts to:"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Users"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s (%2$s)"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No comments awaiting moderation."
+#~ msgstr "Votre commentaire est en attente de modération. Merci."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "column name"
+#~ msgid "Comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No links found."
+#~ msgstr "Aucun résultat !"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "paging"
+#~ msgid "%1$s of %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Archived"
+#~ msgstr "Archives du blog"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "verb; site"
+#~ msgid "Archive"
+#~ msgstr "Archives du blog"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Results"
+#~ msgstr "Résultats sur la recherche : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "plugin name"
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "column name"
+#~ msgid "Title"
+#~ msgstr "Titre : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "[more]"
+#~ msgstr "lire la suite..."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "term name"
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "&larr; Close"
+#~ msgstr "&larr; Commentaires précédents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No valid plugins were found."
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No matching users were found."
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View all"
+#~ msgstr "Voir tous les articles relatifs à la rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comment"
+#~ msgid_plural "Comments"
+#~ msgstr[0] "1 réaction"
+#~ msgstr[1] "%1$s réactions"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "You have %1$s and %2$s."
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Sites"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "dashboard"
+#~ msgid "%1$s on %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "No matching users were found!"
+#~ msgstr "Aucun article sur le même sujet"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Popup Comments"
+#~ msgstr "Commentaires sur Facebook"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search Form"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comments Template"
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "File name:"
+#~ msgstr "Nom : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "Uploader: Drop files here - or - Select Files"
+#~ msgid "or"
+#~ msgstr "lire la suite..."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Allow comments."
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "+ Add New Category"
+#~ msgstr "Rubrique"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "[%s] New Admin Email Address"
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Used: %1$s%% of %2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "View All"
+#~ msgstr "Affichages"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Author:"
+#~ msgstr "Auteur"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Permalink:"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Change Permalinks"
+#~ msgstr "Cliquez pour lire "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "User role"
+#~ msgid "Editor"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "User role"
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Reply to Comment"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add new Comment"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Add Comment"
+#~ msgstr "1 réaction"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Comment by %s marked as spam."
+#~ msgstr "Le fil des commentaires est fermé."
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "meta name"
+#~ msgid "Name"
+#~ msgstr "Votre nom"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "%1$s-%2$s"
+#~ msgstr "%1$s à %2$s"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Search by tag"
+#~ msgstr "Chercher"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Threaded Comments"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Latest"
+#~ msgstr "Articles récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgctxt "widget"
+#~ msgid "Edit"
+#~ msgstr "Editer"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "First Comment"
+#~ msgstr "Commentaires récents"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Info"
+#~ msgstr "Info : "
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Missing email address."
+#~ msgstr "Votre adresse e-mail (elle ne sera pas affichée) :"
+
+# @ color-theme-framework
+#, fuzzy
+#~ msgid "Next Sites"
+#~ msgstr "Page suivante"

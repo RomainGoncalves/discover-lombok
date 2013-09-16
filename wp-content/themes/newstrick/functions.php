@@ -588,7 +588,7 @@ if ( !function_exists ('ct_header_styles' ) ) {
 	wp_enqueue_style( 'bootstrap-responsive',get_template_directory_uri().'/css/bootstrap-responsive.css','','','all');
 	wp_enqueue_style( 'ct-style',get_stylesheet_directory_uri().'/style.css','','','all');		
 	wp_enqueue_style( 'prettyphoto-style',get_template_directory_uri().'/css/prettyphoto.css','','','all');
-	wp_enqueue_style( 'options-css-style',get_stylesheet_directory_uri().'/css/options.css','','','all');
+	wp_enqueue_style( 'options-css-style',get_template_directory_uri().'/css/options.css','','','all');
 
     ############## ADD ON BY ROMAIN ########
     //Test if blog is the main one
@@ -597,7 +597,7 @@ if ( !function_exists ('ct_header_styles' ) ) {
     if ( $blogid == 1 ) { 
 
         //Then load specific assets to the header
-        wp_enqueue_style('homepage-template', get_template_directory_uri().'/homepage-template/assets/css/style.css', array('bootstrap-main-style', 'bootstrap-responsive'), $ver = '1.0', $media = 'all');
+        wp_enqueue_style('homepage-template', get_stylesheet_directory_uri().'/homepage-template/assets/css/style.css', array('bootstrap-main-style', 'bootstrap-responsive'), $ver = '1.0', $media = 'all');
 
     }
 

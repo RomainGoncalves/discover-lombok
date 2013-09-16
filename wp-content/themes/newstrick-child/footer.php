@@ -15,7 +15,12 @@
 	----------------------------------------------------				
 	*/
 
+$id = get_current_blog_id() ;
+
+if($id != 1){
+
 ?>
+
 <footer id="footer" role="contentinfo" itemscope="" itemtype="http://schema.org/WPFooter">
 
 	<?php
@@ -63,6 +68,12 @@ $sticky_menu = stripslashes( $data['ct_sticky_menu'] );
 
 if ( $sticky_menu == 'Yes') { ?>
 <!-- STICKY MAIN MENU -->
+
+
+<?php 
+//end if blog is 1
+}
+?>
 <script>
 jQuery.noConflict()(function($){
   $(document).ready(function(){

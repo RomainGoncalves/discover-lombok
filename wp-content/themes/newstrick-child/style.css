@@ -9,3 +9,7 @@ Version:        1.0.0
 */
  
 @import url("../newstrick/style.css");
+
+div.hero-title h1 a{
+	color: #FFFFFF;
+}
