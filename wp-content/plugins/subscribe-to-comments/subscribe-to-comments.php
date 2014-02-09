@@ -820,16 +820,12 @@ function stc_checkbox_state($data) {
 
 
 function sg_subscribe_start() {
-
 	global $sg_subscribe;
 
 	if ( !$sg_subscribe ) {
-
-		load_plugin_textdomain('subscribe-to-comments', false, basename( dirname( __FILE__ ) ) . '/languages/' );
-		$sg_subscribe = new sg_subscribe() ;
-
+		load_plugin_textdomain('subscribe-to-comments');
+		$sg_subscribe = new sg_subscribe();
 	}
-
 }
 
 // This will be overridden if the user manually places the function

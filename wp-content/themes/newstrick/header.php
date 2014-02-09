@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Newstrick Theme . A ZERGE design (http://www.color-theme.com - http://themeforest.net/user/ZERGE) - Proudly powered by WordPress (http://wordpress.org) -->
 
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
@@ -77,12 +78,7 @@
         }
     ?>
 
-<?php
 
-$blogid = get_current_blog_id();
-
-if($blogid != 1){
-?>
 <!-- Start Top Content -->
 <div id="header" itemscope itemtype="http://schema.org/WPHeader" >
 
@@ -189,7 +185,3 @@ $type_menu = stripslashes( $data['ct_type_menu'] );
     <!-- END TOP BLOCK -->
 
   </div> <!-- #header -->
-
-<?php 
-  }//End if blogid != 1
-?>
