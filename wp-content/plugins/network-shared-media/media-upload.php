@@ -1,9 +1,9 @@
 <?php
 /**
  * @package Netword_Shared_Media
- * @version 0.9.4
+ * @version 0.9.6
  */
-define('WP_ADMIN', TRUE);
+define('WP_ADMIN', FALSE);
 define('WP_LOAD_IMPORTERS', FALSE);
 
 require_once( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) . '/wp-admin/admin.php' );
@@ -15,7 +15,8 @@ if (!current_user_can('upload_files'))
 
 if( isset( $_POST['send'] ) ) {
 	$nsm_blog_id = (int) $_GET['blog_id'];
-	$nsm_send_id = (int) reset( array_keys( $_POST['send'] ) );
+	reset( $_POST['send'] );
+	$nsm_send_id = (int) key( $_POST['send'] );
 }
 
 /* copied from media.php media_upload_form_handler */
@@ -50,5 +51,10 @@ if ( isset( $nsm_blog_id ) && isset( $nsm_send_id ) ) {
 
 	$html = get_image_send_to_editor($attachment_id, $attachment['post_excerpt'], $attachment['post_title'], $align, $url, $rel, $size, $alt);
 
-	return media_send_to_editor($html);
+	if( isset($_POST['chromeless']) && $_POST['chromeless'] ) {
+		// WP3.5+ media browser is identified by the 'chromeless' parameter
+		exit($html);
+	} else {
+		return media_send_to_editor($html);
+	}
 }
