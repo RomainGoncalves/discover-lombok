@@ -27,7 +27,7 @@ if($id != 1){
     $top_block_style = stripslashes( $data['ct_top_block_style'] ); 
 
     if ( $top_block_style == 'Boxed' ) : ?>
-    <div style="margin-bottom: 150px; margin-top: 50px;">
+    <div style="margin-bottom: 60px; margin-top: 50px;">
     	<div id="bottom-block-bg" class="container border-1px bottom-shadow totop-container">
 
     <?php else : ?>

@@ -14,8 +14,8 @@
 			Start Footer
 	----------------------------------------------------				
 	*/
-?>
 
+?>
 <footer id="footer" role="contentinfo" itemscope="" itemtype="http://schema.org/WPFooter">
 
 	<?php
@@ -93,7 +93,6 @@ jQuery.noConflict()(function($){
 });
 </script>
 <!-- END STICKY MAIN MENU -->
-<?php } ?>
 
 
 <?php if ( $img_preload == 'Yes') { ?>
@@ -120,6 +119,14 @@ jQuery.noConflict()(function($){
 
 <!-- GOGLE ANALYTICS -->
 <?php echo stripslashes ( $data['ct_google_analytics'] ); ?>
+<?php
+
+}// End if blog isn't 1
+else{
+  wp_footer();//still get regular footer
+}
+
+?>
 
 </body>
 

@@ -67,7 +67,7 @@ global $data;
                 </a>
               </li>
               <li class="pull-left">
-                <a href="https://plus.google.com/u/0/105008338029322758204/">
+                <a href="https://plus.google.com/+Discover-lombok/posts">
                   <img src="<?php echo get_stylesheet_directory_uri() ; ?>/homepage-template/assets/img/google.png" class="icons">
                 </a>
               </li>
@@ -113,7 +113,7 @@ global $data;
 
         <!-- Hero boxes -->
         <div class="row boxes">
-          <div class="span4">
+          <div class="span6">
 
             <?php
 
@@ -132,7 +132,7 @@ global $data;
                 <div class="box">
                   <div class="box-icon">
                     <a href="<?php echo the_permalink(); ?>">
-                      <?php echo get_the_post_thumbnail($post_id = null, $size = 'post-thumbnails-square', $attr = array('class' => 'span4')); ?>
+                      <?php echo get_the_post_thumbnail($post_id = null, $size = 'post-thumbnails-square', $attr = array('class' => 'span6')); ?>
                     </a>
                   </div>
                   <div class="box-title">
@@ -151,7 +151,7 @@ global $data;
             ?>
             
           </div>
-          <div class="span4">
+          <!-- <div class="span4">
             <div class="box">
               <div class="box-icon">
                 <i class="icon-check"></i>
@@ -164,8 +164,8 @@ global $data;
                 <a class="btn-black" href="#">Continue</a>
               </div>
             </div>
-          </div>
-          <div class="span4">
+          </div> -->
+          <div class="span6">
             <?php
 
               switch_to_blog(2, $validate = true) ;
@@ -183,7 +183,7 @@ global $data;
                 <div class="box">
                   <div class="box-icon">
                     <a href="<?php echo the_permalink(); ?>">
-                      <?php echo get_the_post_thumbnail($post_id = null, $size = 'post-thumbnails-square', $attr = array('class' => 'span4')); ?>
+                      <?php echo get_the_post_thumbnail($post_id = null, $size = 'post-thumbnails-square', $attr = array('class' => 'span6')); ?>
                     </a>
                   </div>
                   <div class="box-title">
@@ -214,7 +214,7 @@ global $data;
         <div class="row recent-posts">
 
           <div class="row recent-title">
-          <h2 class="span12">Last articles in English</h2>
+          <h2 class="span12">Lastest posts in English</h2>
         </div>
 
         <?php
@@ -329,7 +329,7 @@ global $data;
       <div class="sub-footer">
         <div class="container">
           
-          <div class="copyright-text">Copyright &copy; Editions Tucana 2013.
+          <div class="copyright-text">Copyright &copy; Tucana GmbH 2014.
           </div>  
         </div>   
       </div>

@@ -13,3 +13,23 @@ Version:        1.0.0
 div.hero-title h1 a{
 	color: #FFFFFF;
 }
+.read-more{
+	width: auto;
+}
+h2 label{
+	font-size: auto;
+	font-weight: auto;
+	line-height: auto;
+}
+#header div.span3{
+	width: 25%;
+}
+#header div#logo{
+	margin: 10px;
+}
+#header div.row-fluid .span9{
+	margin-left: 0;
+}
+#entry-counters{
+	padding-bottom: 10px;
+}

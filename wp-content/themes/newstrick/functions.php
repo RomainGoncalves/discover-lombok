@@ -5,6 +5,43 @@
 /*-----------------------------------------------------------------------------------*/
 require_once ('admin/index.php');
 
+function the_excerpt_max_charlength($charlength) {
+    $excerpt = get_the_excerpt();
+    $charlength++;
+
+    if ( mb_strlen( $excerpt ) > $charlength ) {
+        $subex = mb_substr( $excerpt, 0, $charlength - 5 );
+        $exwords = explode( ' ', $subex );
+        $excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+        if ( $excut < 0 ) {
+            echo mb_substr( $subex, 0, $excut );
+        } else {
+            echo $subex;
+        }
+        echo '...';
+    } else {
+        echo $excerpt;
+    }
+}
+
+function the_title_max_charlength($charlength) {
+    $title = get_the_title();
+    $charlength++;
+
+    if ( mb_strlen( $title ) > $charlength ) {
+        $subex = mb_substr( $title, 0, $charlength - 5 );
+        $exwords = explode( ' ', $subex );
+        $excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+        if ( $excut < 0 ) {
+            echo mb_substr( $subex, 0, $excut );
+        } else {
+            echo $subex;
+        }
+        echo '...';
+    } else {
+        echo $title;
+    }
+}
 
 /*-----------------------------------------------------------------------------------*/
 /* Sets up theme defaults and registers the various WordPress features that
@@ -31,6 +68,7 @@ if ( !function_exists( 'ct_theme_setup' ) ) {
         add_image_size( 'carousel-thumb', 267, 188, true ); // carousel thumbnail	
         add_image_size( 'slider-thumb', 728, 387, true );   // slider thumbnail
         add_image_size( 'post-thumb', 728, 513, true );     // post thumbnail
+        add_image_size( 'post-thumbnails-square', 220, 124, true );     // post thumbnail square
     }
 }
 add_action('after_setup_theme', 'ct_theme_setup');
@@ -550,7 +588,18 @@ if ( !function_exists ('ct_header_styles' ) ) {
 	wp_enqueue_style( 'bootstrap-responsive',get_template_directory_uri().'/css/bootstrap-responsive.css','','','all');
 	wp_enqueue_style( 'ct-style',get_stylesheet_directory_uri().'/style.css','','','all');		
 	wp_enqueue_style( 'prettyphoto-style',get_template_directory_uri().'/css/prettyphoto.css','','','all');
-	wp_enqueue_style( 'options-css-style',get_stylesheet_directory_uri().'/css/options.css','','','all');
+	wp_enqueue_style( 'options-css-style',get_template_directory_uri().'/css/options.css','','','all');
+
+    ############## ADD ON BY ROMAIN ########
+    //Test if blog is the main one
+    $blogid = get_current_blog_id() ;
+
+    if ( $blogid == 1 ) { 
+
+        //Then load specific assets to the header
+        wp_enqueue_style('homepage-template', get_stylesheet_directory_uri().'/homepage-template/assets/css/style.css', array('bootstrap-main-style', 'bootstrap-responsive'), $ver = '1.0', $media = 'all');
+
+    }
 
 	/* Loads the Internet Explorer specific stylesheet. */
 //	wp_enqueue_style( 'ie-fix', get_template_directory_uri() . '/css/ie-fix.css', array( 'ct-style' ), '1.0' );
